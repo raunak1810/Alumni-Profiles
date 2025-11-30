@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alumni Profiles</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 30px;
+      background: linear-gradient(135deg, #0f0f17, #1b1b2f);
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+    }
+
+    .alumni-list {
+      width: 100%;
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      animation: fadeIn 1s ease;
+    }
+
+    .card {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 18px;
+      display: flex;
+      gap: 25px;
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.15);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+      align-items: flex-start;
+      transition: 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.55);
+      border-color: rgba(0, 170, 255, 0.6);
+    }
+
+    .profile-img {
+      width: 135px;
+      height: 135px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #00d2ff, #3a47d5);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      font-weight: 600;
+      text-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      box-shadow: 0 6px 20px rgba(0, 150, 255, 0.35);
+      flex-shrink: 0;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .links a {
+      margin-right: 20px;
+      font-size: 22px;
+      text-decoration: none;
+      color: #6bb9ff;
+      transition: 0.3s ease;
+      display: inline-block;
+      transform: translateY(0);
+      font-weight: 500;
+    }
+
+    .links a:hover {
+      color: #a7d8ff;
+      transform: translateY(-5px) scale(1.15);
+      text-shadow: 0 6px 14px rgba(0, 150, 255, 0.6);
+    }
+
+    .label { font-weight: bold; margin-top: 12px; display: block; color:#9bd4ff; }
+
+    p { color:#e3e8ff; line-height:1.6; }
+
+    .contact-btn {
+      margin-top: 18px;
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      transition: 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,150,255,0.4);
+    }
+
+    .contact-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0,150,255,0.6);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 style="text-align:center; margin-bottom:25px; font-size:40px;">Alumni Profiles</h1>
+
+  <div class="alumni-list">
+
+    <!-- ALUMNI 1 -->
+    <div class="card">
+      <div class="profile-img">RK</div>
+
+      <div class="info">
+        <h2>Rahul Kumar</h2>
+
+        <div class="links">
+          <a href="https://linkedin.com" target="_blank">🔗 LinkedIn</a>
+          <a href="mailto:rahul@example.com">✉️ Email</a>
+        </div>
+
+        <span class="label">Graduation Year:</span> 2019<br>
+        <span class="label">Branch:</span> CSE<br>
+        <span class="label">Company:</span> Google India<br>
+
+        <span class="label">Experience Summary:</span>
+        <p>Rahul has 4+ years of experience in backend engineering, cloud systems, and scalable architectures.</p>
+
+        <span class="label">Skills:</span>
+        <p>Python, Java, System Design, Cloud Computing</p>
+
+        <span class="label">Success Story:</span>
+        <p>Rahul began as an average coder but kept improving through consistent practice, hackathons, and internships. After completing cloud certifications and building real-world projects, he secured a position at Google. Today, he develops large-scale backend systems and mentors juniors to stay focused and keep learning daily.</p>
+
+        <button class="contact-btn">Contact</button>
+      </div>
+    </div>
+
+    <!-- ALUMNI 2 -->
+    <div class="card">
+      <div class="profile-img">PV</div>
+
+      <div class="info">
+        <h2>Priya Verma</h2>
+
+        <div class="links">
+          <a href="https://linkedin.com" target="_blank">🔗 LinkedIn</a>
+          <a href="mailto:priya@example.com">✉️ Email</a>
+        </div>
+
+        <span class="label">Graduation Year:</span> 2020<br>
+        <span class="label">Branch:</span> IT<br>
+        <span class="label">Company:</span> TCS<br>
+
+        <span class="label">Experience Summary:</span>
+        <p>Priya creates business dashboards, processes data, and works on real-time analytics models.</p>
+
+        <span class="label">Skills:</span>
+        <p>SQL, Excel, Python, Power BI</p>
+
+        <span class="label">Success Story:</span>
+        <p>Priya started with no coding background. She learned Excel, SQL, Python, and visualization tools through online resources. By working on projects and internships, she built a strong portfolio which helped her join TCS. Today she works with high-level data insights and guides juniors interested in analytics.</p>
+
+        <button class="contact-btn">Contact</button>
+      </div>
+    </div>
+
+    <!-- ALUMNI 3 -->
+    <div class="card">
+      <div class="profile-img">AP</div>
+
+      <div class="info">
+        <h2>Aman Patel</h2>
+
+        <div class="links">
+          <a href="https://linkedin.com" target="_blank">🔗 LinkedIn</a>
+          <a href="mailto:aman@example.com">✉️ Email</a>
+        </div>
+
+        <span class="label">Graduation Year:</span> 2018<br>
+        <span class="label">Branch:</span> Mechanical Engineering<br>
+        <span class="label">Company:</span> Mahindra Auto<br>
+
+        <span class="label">Experience Summary:</span>
+        <p>Aman works on automotive component design, manufacturing systems, and mechanical optimization.</p>
+
+        <span class="label">Skills:</span>
+        <p>AutoCAD, SolidWorks, Manufacturing Design</p>
+
+        <span class="label">Success Story:</span>
+        <p>Aman faced multiple rejections but improved his design skills through courses and personal projects. His portfolio got him selected by Mahindra, where he now contributes to major design improvements and mentors students wanting to enter the engineering field.</p>
+
+        <button class="contact-btn">Contact</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
